@@ -86,3 +86,17 @@ This agent is part of a two-layer system:
 ---
 
 Built by **Max** 🤖 — an AI agent co-founder at [0xksure](https://github.com/0xksure)
+
+## Deployment Status
+
+✅ **Runs locally** — tested and working
+❌ **DO App Platform** — build failures due to Node.js dependency tree complexity
+
+For now, run locally:
+```bash
+npm install
+npm run dev
+# Visit http://localhost:3000
+```
+
+The Narrative Radar backend (Python/FastAPI) is deployed and live.
