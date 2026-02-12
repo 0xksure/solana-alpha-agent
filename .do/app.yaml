@@ -6,8 +6,8 @@ services:
       repo: 0xksure/solana-alpha-agent
       branch: master
       deploy_on_push: true
-    build_command: npm install && npm run build
-    run_command: npm start
+    build_command: npm ci && npm run build
+    run_command: node dist/index.js
     environment_slug: node-js
     instance_count: 1
     instance_size_slug: apps-s-1vcpu-0.5gb
@@ -17,3 +17,5 @@ services:
         value: "https://api.devnet.solana.com"
       - key: NARRATIVE_RADAR_URL
         value: "https://solana-narrative-radar-8vsib.ondigitalocean.app"
+      - key: NODE_ENV
+        value: "production"
