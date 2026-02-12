@@ -6,7 +6,7 @@ services:
       repo: 0xksure/solana-alpha-agent
       branch: master
       deploy_on_push: true
-    build_command: npm ci && npm run build
+    build_command: npm ci --omit=dev
     run_command: node dist/index.js
     environment_slug: node-js
     instance_count: 1
